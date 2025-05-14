@@ -20,48 +20,7 @@ function InfoCard({ title, content }) {
 			  // Off-white background for contrast
 			
 		  }}>
-			<svg
-			  viewBox="0 0 800 600"
-			  style={{
-				position: 'absolute',
-				top: 0,
-				left: 0,
-				width: '100%',
-				height: '100%',
-				opacity: 0.06,
-				zIndex: -1,
-			  }}
-			  xmlns="http://www.w3.org/2000/svg"
-			>
-			  <defs>
-				<linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
-				  <stop offset="0%" style={{ stopColor: '#888', stopOpacity: 1 }} />
-				  <stop offset="100%" style={{ stopColor: '#ccc', stopOpacity: 1 }} />
-				</linearGradient>
-			  </defs>
-			  <g stroke="url(#grad)" strokeWidth="1">
-				<line x1="50" y1="50" x2="750" y2="50" />
-				<line x1="50" y1="150" x2="750" y2="150" />
-				<line x1="50" y1="250" x2="750" y2="250" />
-				<line x1="50" y1="350" x2="750" y2="350" />
-				<line x1="50" y1="450" x2="750" y2="450" />
-				<line x1="50" y1="550" x2="750" y2="550" />
-	  
-				<line x1="50" y1="50" x2="50" y2="550" />
-				<line x1="150" y1="50" x2="150" y2="550" />
-				<line x1="250" y1="50" x2="250" y2="550" />
-				<line x1="350" y1="50" x2="350" y2="550" />
-				<line x1="450" y1="50" x2="450" y2="550" />
-				<line x1="550" y1="50" x2="550" y2="550" />
-				<line x1="650" y1="50" x2="650" y2="550" />
-				<line x1="750" y1="50" x2="750" y2="550" />
-			  </g>
-			  <g stroke="url(#grad)" strokeWidth="1">
-				<polygon points="50,50 250,150 150,350 50,550" />
-				<polygon points="750,50 550,150 650,350 750,550" />
-				<polygon points="400,50 300,250 500,250 400,50" />
-			  </g>
-			</svg>
+		
 	  
 			<h1>Luke Short</h1>
 			<h2>Software Engineer</h2>

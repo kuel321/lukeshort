@@ -1,5 +1,17 @@
 .app-one {
 	padding:4rem;
+
+}
+
+ 
+
+html {
+
+	
+	background-image: url('../public/polygrid.svg');
+	background-color:black;
+	background-size:cover;
+	background-repeat: no-repeat
 }
 @media (max-width: 639px) {
 	
