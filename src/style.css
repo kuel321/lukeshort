@@ -3,20 +3,31 @@
 
 }
 
- 
+.lessspace {
+	margin-bottom:-0.5rem;
+}
+.greentext {
+	color: #32a287;
+}
+.tantext {
+	color:#f1ffe7;
+	margin-top:-1rem;
+}
+a {
+	color:#f1ffe7;
+}
+#app {
+	display:flex;
+	justify-content:center;
+}
 
-html {
-
-	
-	background-image: url('../public/polygrid.svg');
-	background-color:black;
-	background-size:cover;
-	background-repeat: no-repeat
+.app-one {
+	max-width:1500px;
 }
 @media (max-width: 639px) {
 	
 	.app-one {
-		padding:2rem;
+		padding:1rem;
 	}
 }
 

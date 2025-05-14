@@ -1,9 +1,10 @@
 import './style.css';
-function InfoCard({ title, content }) {
+function InfoCard({ title, content, link }) {
 	return (
 	  <div style={{ border: '1px solid #ddd', padding: '1rem', marginBottom: '1rem' }}>
-		<h3>{title}</h3>
-		<p>{content}</p>
+		<h3 class={"greentext"}>{title}</h3>
+		<p>{content} <a href="mailto:lukeshort321@gmail.com">{link ?? null}</a></p>
+    
 	  </div>
 	);
   }
@@ -22,8 +23,9 @@ function InfoCard({ title, content }) {
 		  }}>
 		
 	  
-			<h1>Luke Short</h1>
-			<h2>Software Engineer</h2>
+			<h1 class={"lessspace"}>Luke Short</h1>
+			<h2 class={"greentext"}>Software Engineer</h2>
+      <h2 class={"tantext"}>Chasing a Chance, LLC</h2>
 			<div style={{ margin: '1rem 0', display: 'flex', gap: '1rem' }}>
   <a href="https://github.com/kuel321" target="_blank" rel="noopener noreferrer">
     <svg height="32" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -56,8 +58,10 @@ function InfoCard({ title, content }) {
   content="I am a full stack developer with experience building both government and commercial applications. I currently develop secure, internal software for military and government use, working across the full stack with C#, React, Scriban, SQL, and Docker. My work includes building user interfaces, data management tools, and export features supporting military operations.
 
 Outside of government projects, I’ve also built modern, public-facing websites and marketing tools for commercial clients while working in advertising agencies. This experience gives me a balance of security-focused, mission-critical development and fast-moving, user-focused web experiences." 
-/>
+ link
+ />
 		<InfoCard 
+    link
   title="Security Clearance" 
   content="Currently supporting military applications with active DoD (CAC) credential. Eligible for secure system access and trusted to work on government projects." 
 />
@@ -65,8 +69,9 @@ Outside of government projects, I’ve also built modern, public-facing websites
 
 		
 		<InfoCard 
+    link="lukeshort321@gmail.com"
 		  title="Contact" 
-		  content="Email me at lukeshort321@gmail.com" 
+		  content="Email me at" 
 		/>
 	  </div>
 	);
