@@ -3,7 +3,7 @@ function InfoCard({ title, content, link }) {
 	return (
 	  <div style={{ border: '1px solid #ddd', padding: '1rem', marginBottom: '1rem' }}>
 		<h3 class={"greentext"}>{title}</h3>
-		<p>{content} <a href="mailto:lukeshort321@gmail.com">{link ?? null}</a></p>
+		<p>{content} <a aria-label="Email link for contacting me" href="mailto:lukeshort321@gmail.com">{link ?? null}</a></p>
     
 	  </div>
 	);
@@ -26,8 +26,9 @@ function InfoCard({ title, content, link }) {
 			<h1 class={"lessspace"}>Luke Short</h1>
 			<h2 class={"greentext"}>Software Engineer</h2>
       <h2 class={"tantext"}>Chasing a Chance, LLC</h2>
+      <nav aria-label={"social-links"}>
 			<div style={{ margin: '1rem 0', display: 'flex', gap: '1rem' }}>
-  <a href="https://github.com/kuel321" target="_blank" rel="noopener noreferrer">
+  <a href="https://github.com/kuel321" target="_blank" aria-label="Github Profile" rel="noopener noreferrer">
     <svg height="32" viewBox="0 0 16 16" fill="white" xmlns="http://www.w3.org/2000/svg">
       <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
       0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52
@@ -39,7 +40,7 @@ function InfoCard({ title, content, link }) {
       -8-8-8z"/>
     </svg>
   </a>
-  <a href="https://www.linkedin.com/in/luke-short-272434b8/" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.linkedin.com/in/luke-short-272434b8/" aria-label="LinkedIn Profile" target="_blank" rel="noopener noreferrer">
     <svg height="32" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
       <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 
       5-5v-14c0-2.76-2.24-5-5-5zm-11.75 19h-2.5v-9h2.5v9zm-1.25-10.28c-.83 
@@ -50,7 +51,7 @@ function InfoCard({ title, content, link }) {
     </svg>
   </a>
 </div>
-
+</nav>
 			
 
 <InfoCard 
