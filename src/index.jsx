@@ -50,6 +50,10 @@ function InfoCard({ title, content, link }) {
       2.4-1.33 2.57 0 3.05 1.69 3.05 3.89v5.21z"/>
     </svg>
   </a>
+  <a href="./LukeShortResume.pdf" download="LukeShortResume.pdf" aria-label="Download Luke Short's resume as PDF">
+  <img class="resume-icon" src="./resume.svg" alt="Resume download icon" />
+</a>
+
 </div>
 </nav>
 			
